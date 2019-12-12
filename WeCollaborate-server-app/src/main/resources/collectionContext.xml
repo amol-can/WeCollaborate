@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:utils="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util-4.3.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="collectionPojo" class="com.mdsol.springdemo.CollectionPojo">
+        <property name="fruits">
+            <utils:list list-class="java.util.Vector">
+                <value>Apple</value>
+                <value>Mango</value>
+                <value>Banana</value>
+            </utils:list>
+        </property>
+
+        <property name="cricketers">
+            <utils:set set-class="java.util.TreeSet">
+                <value>Virat</value>
+                <value>Sachin</value>
+                <value>Virat</value>
+                <value>Pant</value>
+            </utils:set>
+        </property>
+        
+        <property name="hTable">
+            <utils:map map-class="java.util.Hashtable">
+                <entry key="Amol" value="Developer"/>
+                <entry key="Shubham" value="PyDeveloper"/>
+            </utils:map>
+        </property>
+    </bean>
+
+
+
+</beans>
