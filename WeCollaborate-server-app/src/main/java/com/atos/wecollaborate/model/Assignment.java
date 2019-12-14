@@ -1,8 +1,8 @@
-package com.atos.wecollaborate.dao.manager;
+package com.atos.wecollaborate.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "assignment")
+@XmlRootElement
 public class Assignment {
 
     private String assignmentName;

@@ -4,10 +4,6 @@
 
 <web-app>
 <display-name>Archetype Created Web Application</display-name>
-  
-  <welcome-file-list>
-  	<welcome-file>index.html</welcome-file>
-  </welcome-file-list>
 
   <!-- Jersey Servlet configurations -->
   <servlet>
@@ -24,5 +20,9 @@
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
   <!-- Jersey Servlet configurations -->
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
 
 </web-app>
